@@ -16,7 +16,7 @@ public class CenterSphere : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        xSpeed = (slider.value * .8f) - .4f;
+        xSpeed = (slider.value * .6f) - .3f;
         transform.position += new Vector3(xSpeed, 0);
         if (transform.position.x < -8.8f) transform.position += new Vector3(8.8f * 2, 0);
         if (transform.position.x > 8.8f) transform.position += new Vector3(-8.8f * 2, 0);
